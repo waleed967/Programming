@@ -52,49 +52,24 @@ namespace RemoteTv3
         {
             target.turnOff();
         }
-    }
 
-    class Remote1
-    {
-        private Remotable target;
-
-        public Remote1(Remotable target)
-        {
-            this.target = target;
-        }
         public void turnOn()
         {
             target.turnOn();
         }
-    }
 
-    class Remote2
-    {
-        private Remotable target;
-
-        public Remote2(Remotable target)
-        {
-            this.target = target;
-        }
         public void volumeDown()
         {
             target.volumeDown();
         }
-    }
 
-    class Remote3
-    {
-        private Remotable target;
-
-        public Remote3(Remotable target)
-        {
-            this.target = target;
-        }
         public void volumeUp()
         {
             target.volumeUp();
         }
     }
+
+    
 
     class Program
     {
@@ -102,13 +77,11 @@ namespace RemoteTv3
         {
             Television te = new Television();
             Remote re = new Remote(te);
-            Remote1 rem = new Remote1(te);
-            Remote2 remo = new Remote2(te);
-            Remote3 remot = new Remote3(te);
+            
             re.turnOff();
-            rem.turnOn();
-            remo.volumeDown();
-            remot.volumeUp();
+            re.turnOn();
+            re.volumeDown();
+            re.volumeUp();
             Console.ReadLine();
         }
     }
