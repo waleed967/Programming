@@ -13,7 +13,7 @@ namespace RemoteWithUserInput
             double tv;
             Console.WriteLine("Press any key");
             tv = Convert.ToDouble(Console.ReadLine());
-            tv = Convert.ToDouble(Console.ReadLine());
+            
 
             switch (Convert.ToDouble(tv))
             {
